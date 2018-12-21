@@ -1,0 +1,7 @@
+z=0
+
+for y in range(1001):
+     cevap = y ** y
+     z += cevap
+
+print(z %10000000000)
