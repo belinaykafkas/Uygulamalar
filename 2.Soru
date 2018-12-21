@@ -1,0 +1,18 @@
+metin=input("metini giriniz: ")
+tersi=metin[::-1]
+harf=[]
+rakam=[]
+for i in metin:
+    if not(i in harf):
+        harf.append(i)
+        rakam.append(1)
+    else:
+        rakam[harf.index(i)]=rakam[harf.index(i)]+1
+print("Harften rakama")
+for i in range(len(harf)):
+    print(harf[i], " -> ", rakam[i])
+print("Toplam Harf Rakamı: ",len(rakam))
+print(tersi)
+liste=[metin.split()]
+print(liste)
+print(tersi.split())
