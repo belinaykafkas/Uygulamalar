@@ -1,0 +1,10 @@
+sayilar=[]
+for a in range(5):
+    sayi = input("Sayı gir: ")
+    sayilar.append(sayi)
+sayilar.sort(reverse=True)
+print(sayilar)
+
+text=open("221120181007_sonuc.txt","w")
+for b in range(5):
+    text.write(sayilar[b]+"-")
